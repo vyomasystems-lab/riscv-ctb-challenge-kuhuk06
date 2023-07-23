@@ -15,12 +15,12 @@ RVTEST_CODE_BEGIN
 
 loop:
 	lw t1, (t0)
-  lw t2, 4(t0)
-  lw t3, 8(t0)
+  lw t2, 8(t0)
+  lw t3, 16(t0)
   add t4, t1, t2
-  addi t0, t0, 12
+  addi t0, t0, 24
   beq t3, t4, loop        # check if sum is correct
-  j fail
+  j test_end
 
 test_end:
 
