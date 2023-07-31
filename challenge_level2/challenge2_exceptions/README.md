@@ -11,3 +11,5 @@ The following changes are made in the rv32i.yaml file :-
 This rv32i.yaml file created the test.S, which generated the following exceptions :-
 
 <img width="580" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/9ca47344-55fb-495a-a8e9-b5b7fdf05519">
+
+Please refer the rv32.yaml and test.S file present in this directory.
