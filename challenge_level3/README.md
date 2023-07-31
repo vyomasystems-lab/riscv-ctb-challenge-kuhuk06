@@ -78,6 +78,7 @@ In this challenge, we have to find bugs and coverage in the given design.
    ---> added the directed test to geneerate JUMP instructions ==== +directed_instr_1=riscv_jal_instr,4
 
    The following commands are executed :-
+   
    ---> run --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --iteration 10
    
    This run command iterates 10 times
