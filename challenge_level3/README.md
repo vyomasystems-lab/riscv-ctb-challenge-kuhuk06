@@ -79,8 +79,14 @@ In this challenge, we have to find bugs and coverage in the given design.
 
    The following commands are executed :-
    ---> run --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --iteration 10
+   
    This run command iterates 10 times
-   ---> cov --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --dir 
+   
+   ---> cov --target rv32i --test riscv_arithmetic_basic_test --testlist testlist.yaml --simulator pyflow --dir out_2023-07-31/
+
+   This cov command leads to error: unrecognized arguments: +disable_compressed_instr=1
+
+   So ran the python3 /tools/riscv-dv/pygen/pygen_src/test/riscv_instr_cov_test.py command directly on the terminal after removing "+disable_compressed_instr=1" argument, which lead to the following coverage report generation, which can be found in directory - 
    
 
 
