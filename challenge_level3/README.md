@@ -64,8 +64,15 @@ In this challenge, we have to find bugs and coverage in the given design.
    Please refer files in directory random_test/BUG_OR_ORI
    
 3) Coverage
+
+   The following changes are made in testlist.yaml :-
    
+   <img width="365" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/af111613-5388-4142-a976-32822d5cf31d">
+
+   ---> increased the instr_cnt to 500
    
+   ---> removed lines to generate FENCE, JUMP, CSR instructions 
+
 
 
    
