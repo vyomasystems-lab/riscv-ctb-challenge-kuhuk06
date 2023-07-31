@@ -88,7 +88,9 @@ In this challenge, we have to find bugs and coverage in the given design.
    This cov command leads to error: unrecognized arguments: +disable_compressed_instr=1
 
    So ran the python3 /tools/riscv-dv/pygen/pygen_src/test/riscv_instr_cov_test.py command directly on the terminal after removing "+disable_compressed_instr=1" argument, which lead to the following coverage report generation, which can be found in directory - riscv_dv_coverage/cov_out_2023-07-31/CoverageReport.txt
-   
+
+   <img width="293" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/a8fb962e-ebb1-4955-9f3e-90b4f79cb646">
+
 
 
 
