@@ -11,5 +11,5 @@ Following are the bugs found in test.S :-
  
    <img width="210" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/2eabac51-2b70-4831-b62a-7fb90459f416">
 
-3) 
-
+3) The immediate value "fail" used in jump instruction "j" is not declared any where in the test. Thus replaced it with "test_end".
+   <img width="221" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/9fa54a51-96e7-44a4-a850-22c3ccd10e8b">
