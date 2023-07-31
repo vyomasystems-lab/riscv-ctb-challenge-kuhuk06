@@ -71,7 +71,9 @@ In this challenge, we have to find bugs and coverage in the given design.
 
    ---> increased the instr_cnt to 500
    
-   ---> removed lines to generate FENCE, JUMP, CSR instructions 
+   ---> removed lines to generate FENCE, JUMP, CSR instructions +no_fence=1
+    +no_data_page=1
+    +no_branch_jump=1
 
 
 
