@@ -21,7 +21,7 @@ In this challenge, we have to find bugs and coverage in the given design.
    
    BUG2 ---> ori instruction performs xori operation
 
-   Please refer files in directory random_tests/BUG_OR_ORI
+   Please refer files in directory random_test/BUG_OR_ORI
    
 3) Coverage
    
