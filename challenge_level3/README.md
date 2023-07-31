@@ -19,7 +19,47 @@ In this challenge, we have to find bugs and coverage in the given design.
 
    BUG1 ---> or instruction performs xor operation
    
+   <img width="299" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/a356a22d-b2b1-481f-a7d5-fbd1397bea25">
+   
+   After decoding the instruction mentioned in diff logs, we found the following details ---
+
+   opcode = 0110011
+
+   rd = 00110 (x6)
+
+   funct3 = 110 (OR)
+
+   rs1 = 11110 (x30)
+
+   rs2 = 11110 (x30)
+
+   funct7 = 0000000
+
+   Since the content of rs1 and rs2 is same, rd will be equal to 0, if xor is performed else if or is performed, it would be 0x00b34767.
+
    BUG2 ---> ori instruction performs xori operation
+   
+   <img width="299" alt="image" src="https://github.com/vyomasystems-lab/riscv-ctb-challenge-kuhuk06/assets/22321279/d4923846-1968-4210-8e59-0be37f9e7992">
+   
+   After decoding the instruction mentioned in diff logs, we found the following details ---
+
+   opcode = 0010011
+
+   rd     = 11100 (x28)
+
+   funct3 = 110 (OR)
+
+   rs1    = 01110 (x14)
+
+   imm    = 111101111100 (f7c)
+
+   After grepping the value of rs1 register, we found that rs1 = 0x70000000.
+
+   rd     = 0x70000000 OR 0xffffff7c (sign-extended imm. ) = 0xffffff7c
+
+   if xor is carried out, rd would be
+
+   rd     = 0x70000000 XOR 0xffffff7c = 0x8fffff7c
 
    Please refer files in directory random_test/BUG_OR_ORI
    
