@@ -73,7 +73,9 @@ In this challenge, we have to find bugs and coverage in the given design.
    
    ---> removed lines to generate FENCE, JUMP, CSR instructions +no_fence=1
     +no_data_page=1
-    +no_branch_jump=1
+    +no_branch_jump=1 +no_csr_instr=1
+
+   ---> added the directed test to geneerate JUMP instructions 
 
 
 
